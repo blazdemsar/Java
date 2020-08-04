@@ -1,0 +1,15 @@
+package com.blazdemsar.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.blazdemsar.service.EmployeeService;
+
+@RestController
+public class NewEmployeeRestController {
+	
+	@Autowired
+	EmployeeService employeeService;
+	
+	
+}

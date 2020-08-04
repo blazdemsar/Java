@@ -1,0 +1,56 @@
+<taglib xmlns="http://java.sun.com/xml/ns/jee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xmlns/ns/jee
+http://java.sun.com/xml/ns/ns/j2ee-jspTagLibrary_2.0.xsd"
+version="2.0">
+
+<tlib-version>2.0</tlib-version>
+<uri>http://blazdemsar.com/jsp/tags/cust</uri>
+
+<tag>
+	
+	<name>message</name>
+	<tag-class>com.blazdemsar.taghandler.MessageTag</tag-class>
+	<body-content>scriptless</body-content>
+	
+	<attribute>
+		<name>from</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>to</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>message</name>
+		<required>true</required>
+	</attribute>
+	
+</tag>
+
+<tag>
+
+	<name>header</name>
+	<tag-class>com.blazdemsar.taghandler.HeaderTag</tag-class>
+	<body-content>scriptless</body-content>
+
+</tag>
+
+<tag>
+
+	<name>footer</name>
+	<tag-class>com.blazdemsar.taghandler.FooterTag</tag-class>
+	<body-content>scriptless</body-content>
+	
+	<attribute>
+		<name>name</name>
+		<required>true</required>
+	</attribute>
+	<attribute>
+		<name>align</name>
+		<required>true</required>
+	</attribute>
+
+</tag>
+
+</taglib>

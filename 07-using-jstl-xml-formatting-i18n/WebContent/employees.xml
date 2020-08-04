@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<employee>
+		<empId>1</empId>
+		<name>Blaz</name>
+		<job>Programmer</job>
+		<salary>1700</salary>
+	</employee>
+
+	<employee>
+		<empId>2</empId>
+		<name>Domen</name>
+		<job>Coder</job>
+		<salary>1999</salary>
+	</employee>
+
+	<employee>
+		<empId>3</empId>
+		<name>Manu</name>
+		<job>Ind. Eng.</job>
+		<salary>7000</salary>
+	</employee>
+
+	<employee>
+		<empId>4</empId>
+		<name>Natalija</name>
+		<job>MechE</job>
+		<salary>8000</salary>
+	</employee>
+</employees>

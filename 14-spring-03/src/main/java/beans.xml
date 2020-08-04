@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Singleton scope : note scope"singleton" - singleton is also set by default-->
+	<bean name="e1" class="com.blazdemsar.domain.Employee" scope="singleton">
+		<property name="empId" value="1" />
+		<property name="name" value="Blaz" />
+		<property name="job" value="Programmer" />
+		<property name="salary" value="8000" />
+		<property name="address" ref="address" />
+		<property name="hobbies" >
+			<list>
+				<value>Swimming</value>
+				<value>Watching TV</value>
+				<value>Netflix</value>
+				<value>Hiking</value>
+			</list>
+		</property>
+		<property name="instructor" >
+			<map>
+				<entry key="Oracle PL/SQL" value="Santosh" />
+				<entry key="MERNStack" value="Ashish" />
+				<entry key="Java Spring" value="Dinesh" />
+			</map>
+		</property>
+		<property name="skills" >
+			<set>
+				<value>React.js</value>
+				<value>Node.js</value>
+				<value>MongoDB</value>
+				<value>Core Java 11</value>
+				<value>PL/SQL</value>
+				<value>MySQL</value>
+			</set>
+		</property>
+	</bean>
+	
+	<bean name="address" class="com.blazdemsar.domain.Address">
+		<property name="addressLine1" value="13522 Canada Goose Ct" />
+    	<property name="addressLine2" value="House" />
+    	<property name="city" value="Clifton" />
+    	<property name="state" value="VA" />
+	</bean>
+	
+	
+	<!-- Prototype scope : note scope"prototype" -->
+	<bean name="e2" class="com.blazdemsar.domain.Employee" scope="prototype" init-method="initMethod" destroy-method="destroyMethod">
+		<constructor-arg name="empId" value="2" />
+		<constructor-arg name="name" value="Domen" />
+		<constructor-arg name="job" value="DBA" />
+		<constructor-arg name="salary" value="7000" />
+		<constructor-arg name="address" ref="address" />
+		<property name="hobbies" >
+			<list>
+				<value>Swimming</value>
+				<value>Watching TV</value>
+				<value>Netflix</value>
+				<value>Hiking</value>
+			</list>
+		</property>
+		<property name="instructor" >
+			<map>
+				<entry key="Oracle PL/SQL" value="Santosh" />
+				<entry key="MERNStack" value="Ashish" />
+				<entry key="Java Spring" value="Dinesh" />
+			</map>
+		</property>
+		<property name="skills" >
+			<set>
+				<value>React.js</value>
+				<value>Node.js</value>
+				<value>MongoDB</value>
+				<value>Core Java 11</value>
+				<value>PL/SQL</value>
+				<value>MySQL</value>
+			</set>
+		</property>
+	</bean>
+	
+	<!-- <bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean> -->
+	
+	<bean name="messageSource1" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/WEB-INF/views/"/>
+	</bean>
+</beans>

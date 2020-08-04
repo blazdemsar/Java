@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					http://www.springframework.org/schema/context
+	   					http://www.springframework.org/schema/context/spring-context.xsd 
+	   					http://www.springframework.org/schema/mvc
+	   					http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:component-scan base-package="com.blazdemsar" />
+
+	<bean name="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url" value="jdbc:mysql://localhost:3306/blaz_db?serverTimezone=UTC&amp;useLegacyDateTime=false&amp;allowPublicKeyRetrieval=false" />
+		<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+		<property name="username" value="root" />
+		<property name="password" value="password" />
+	</bean>
+	
+	<bean name="jdbcTemplate" class="org.springfdramework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean name="employeeDao" class="com.blazdemsar.dao.EmployeeDaoImpl">
+		<constructor-arg name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+	
+	<bean name="employeeService" class="com.blazdemsar.service.EmployeeServiceImpl" >
+		<constructor-arg name="employeeDao" ref="employeeDao" />
+	</bean>
+	<mvc:annotation-driven />
+
+</beans>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    
+    <!-- <bean name="employee1" class="com.blazdemsar.domain.Employee" autowire="no"> -->
+    <!-- <bean name="employee1" class="com.blazdemsar.domain.Employee" autowire="default"> -->
+    
+    <!-- <bean name="employee1" class="com.blazdemsar.domain.Employee" autowire="byType"> -->
+    <!-- autowire="byType" expects only one bean of a given type.
+    	 If there are more it will report an error. -->
+    
+    <!-- <bean name="employee1" class="com.blazdemsar.domain.Employee" autowire="byName"> -->
+    <!-- autowire="byName" looks for a bean that has the same name as the name of the field in the class
+    	 that wants dependent object -->
+    
+    <bean name="employee1" class="com.blazdemsar.domain.Employee" autowire="byName" init-method="initMethod()" destroy-method="destroyMethod()"> <!-- autowire="no"  does not wire the address-->
+    	<property name="empId" value="1" />
+    	<property name="name" value="Blaz" />
+    	<property name="job" value="Programmer" />
+    	<property name="salary" value="5000" />
+    	<!-- <property name="address" ref="addr1" /> -->
+    </bean>
+    
+    <bean name="employee2" class="com.blazdemsar.domain.Employee">
+    	<property name="empId" value="2" />
+    	<property name="name" value="Domen" />
+    	<property name="job" value="DBA" />
+    	<property name="salary" value="7000" />
+    	<property name="address" ref="addr2" />
+    </bean>
+    
+    <bean name="addr1" class="com.blazdemsar.domain.Address">
+    	<property name="addressLine1" value="13522 Canada Goose Ct" />
+    	<property name="addressLine2" value="House" />
+    	<property name="city" value="Clifton" />
+    	<property name="state" value="VA" />
+    </bean>
+    
+    <bean name="addr2" class="com.blazdemsar.domain.Address">
+    	<property name="addressLine1" value="Kosovelova Ulica 45" />
+    	<property name="addressLine2" value="House" />
+    	<property name="city" value="Ljubljana" />
+    	<property name="state" value="Slovenia" />
+    </bean>
+    
+    <bean name="employee3" class="com.blazdemsar.domain.Employee">
+    	<property name="empId" value="3" />
+    	<property name="name" value="Natalija" />
+    	<property name="job" value="MechE" />
+    	<property name="salary" value="8000" />
+    	<property name="address" ref="addr2" />
+    </bean>
+    
+    <bean name="employee4" class="com.blazdemsar.domain.Employee">
+    	<constructor-arg name="empId" value="4" />
+    	<constructor-arg name="name" value="Manu" />
+    	<constructor-arg name="job" value="Ind Eng." />
+    	<constructor-arg name="salary" value="9000" />
+    	<constructor-arg name="address" ref="addr2" />
+    </bean>
+    
+</beans>
