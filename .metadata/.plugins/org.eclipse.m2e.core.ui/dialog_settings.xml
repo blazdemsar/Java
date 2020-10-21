@@ -88,10 +88,21 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\blazd\JSP_Servlet\springboot-resttemplate"/>
+			<item value="C:\Users\blazd\Desktop\springboot-resttemplate"/>
+			<item value="C:\Users\blazd\JSP_Servlet\Online-Banking-Application-deployment"/>
+			<item value="C:\Users\blazd\JSP_Servlet\Online-Banking-Application"/>
+			<item value="C:\Users\blazd\JSP_Servlet\43-springboot-junit2"/>
+			<item value="C:\Users\blazd\JSP_Servlet\42-springboot-junit"/>
+			<item value="C:\Users\blazd\JSP_Servlet\41-springboot-aop"/>
+			<item value="C:\Users\blazd\JSP_Servlet\40-springboot-mail"/>
+			<item value="C:\Users\blazd\JSP_Servlet\37-springboot-hibernate3-more-validations"/>
+			<item value="C:\Users\blazd\JSP_Servlet\35-springboot-hibernate2"/>
+			<item value="C:\Users\blazd\JSP_Servlet\34-springboot-hibernate"/>
+			<item value="C:\Users\blazd\JSP_Servlet\33-springboot-security5"/>
+			<item value="C:\Users\blazd\JSP_Servlet\28-springboot-validation-paging-sorting"/>
 			<item value="C:\Users\blazd\JSP_Servlet\27-springboot-restful-webservices3"/>
 			<item value="C:\Users\blazd\JSP_Servlet\23-spring-mvc-javaconfig-jparepository-formvalidation"/>
-			<item value="C:\Users\blazd\JSP_Servlet\24-springboot"/>
-			<item value="C:\Users\blazd\JSP_Servlet\22-spring-mvc-javaconfig-jparepository\src\main\webapp\WEB-INF\views\employeeForm.jsp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

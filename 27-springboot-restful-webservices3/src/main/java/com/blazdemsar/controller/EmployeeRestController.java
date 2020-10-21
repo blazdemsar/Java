@@ -168,11 +168,11 @@ public class EmployeeRestController {
 		 // http://localhost:8080/updateEmployee/1?salary=8000&designation=Sr. Programmer
 		 @RequestMapping(value="updateEmployee/{id}", method=RequestMethod.PUT)
 		 public ResponseEntity<?>updateTheEmployee(@PathVariable int id, @RequestParam int salary, 
-				 @RequestParam String designation){
+				 @RequestParam String job){
 			 Employee employeeToBeUpdated = employeeService.findById(id);
 			 if(employeeToBeUpdated != null) {
 				 employeeToBeUpdated.setSalary(salary);
-				 employeeToBeUpdated.setDesignation(designation);
+				 employeeToBeUpdated.setJob(job);
 				 Employee e = employeeService.save(employeeToBeUpdated);
 				 return new ResponseEntity<Employee>(e, HttpStatus.ACCEPTED);
 			 }else {

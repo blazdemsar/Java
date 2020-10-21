@@ -2,23 +2,54 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="flight_flightId"/>
 		<list key="findhistory">
+			<item value="flight_flightId"/>
+			<item value="firstName"/>
+			<item value="accountType"/>
+			<item value="Employee"/>
+			<item value="employee"/>
+			<item value="passenger"/>
+			<item value="Passenger"/>
+			<item value="flight"/>
+			<item value="Flight"/>
+			<item value="airline"/>
+			<item value="Airline"/>
+			<item value="jstl"/>
+			<item value="designation"/>
+			<item value="Designation"/>
 			<item value="synergisticit"/>
 		</list>
 		<list key="replacehistory">
+			<item value="User"/>
+			<item value="user"/>
+			<item value="flight"/>
+			<item value="Flight"/>
+			<item value="reservation"/>
+			<item value="Reservation"/>
+			<item value="passenger"/>
+			<item value="Passenger"/>
+			<item value="Airport"/>
+			<item value="airport"/>
+			<item value="job"/>
+			<item value="Job"/>
 			<item value="blazdemsar"/>
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="345"/>
-		<item key="DIALOG_Y_ORIGIN" value="268"/>
+		<item key="DIALOG_X_ORIGIN" value="989"/>
+		<item key="DIALOG_Y_ORIGIN" value="310"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="248"/>
+		<item key="DIALOG_Y_ORIGIN" value="403"/>
 	</section>
 </section>

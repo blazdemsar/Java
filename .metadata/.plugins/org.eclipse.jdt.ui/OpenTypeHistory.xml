@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{RoleService.java[RoleService" modifiers="513" timestamp="1600468742883"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{UserService.java[UserService" modifiers="513" timestamp="1600466933105"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{AirlineService.java[AirlineService" modifiers="513" timestamp="1600813649120"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{AirportService.java[AirportService" modifiers="513" timestamp="1600813704653"/>
+    <typeInfo handle="=AirlineReservationSystem/C:\/Users\/blazd\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.3.3.RELEASE\/spring-data-jpa-2.3.3.RELEASE.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.3.3.RELEASE=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1598381286259"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{FlightService.java[FlightService" modifiers="513" timestamp="1602281534145"/>
+    <typeInfo handle="=AirlineReservationSystem/C:\/Program Files\/Java\/jdk-11.0.7\/lib\/jrt-fs.jar`jdk.management.jfr=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/11\/docs\/api\/=/&lt;jdk.management.jfr(FlightRecorderMXBean.class[FlightRecorderMXBean" modifiers="1537" timestamp="1592343552134"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{PassengerService.java[PassengerService" modifiers="513" timestamp="1600988038564"/>
+    <typeInfo handle="=AirlineReservationSystem/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.service{ReservationService.java[ReservationService" modifiers="513" timestamp="1602441925872"/>
+    <typeInfo handle="=AirlineReservationClient/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.blazdemsar.integration{FlightRestClient.java[FlightRestClient" modifiers="513" timestamp="1602391079306"/>
+</typeInfoHistroy>

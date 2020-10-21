@@ -1,0 +1,5 @@
+${AnsiColor.BLUE}Application Name: ${application.name}
+Spring Boot ${spring-boot.version}
+Developer: Dinesh, Blaz, Menglee
+
+================================================

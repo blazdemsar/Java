@@ -1,0 +1,17 @@
+package com.blazdemsar.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.blazdemsar.domain.Reservation;
+
+public interface ReservationRepository extends JpaRepository<Reservation, Long> {
+	
+	@Query(value="SELECT * FROM airline_db.reservation WHERE username=:username", nativeQuery=true)
+	public List<Reservation> findByUsername(String username);
+	
+	@Query(value="SELECT * FROM airline_db.reservation WHERE flightId=:flightId", nativeQuery=true)
+	public List<Reservation> findByFlightId(Long flightId);
+}

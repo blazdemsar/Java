@@ -36,7 +36,7 @@ public class Employee {
 	private String name;
 	
 	@NotEmpty(message="must not be empty ***Javax Validation")
-	private String designation;
+	private String job;
 	
 	@Max(value = 8000)
 	@Min (value = 3000)
@@ -79,11 +79,11 @@ public class Employee {
 		
 	}
 
-	public Employee(int empId, String name, String designation, int salary) {
+	public Employee(int empId, String name, String job, int salary) {
 		super();
 		this.empId = empId;
 		this.name = name;
-		this.designation = designation;
+		this.job = job;
 		this.salary = salary;
 	}
 
@@ -103,12 +103,12 @@ public class Employee {
 		this.name = name;
 	}
 
-	public String getDesignation() {
-		return designation;
+	public String getJob() {
+		return job;
 	}
 
-	public void setDesignation(String designation) {
-		this.designation = designation;
+	public void setJob(String job) {
+		this.job = job;
 	}
 
 	public int getSalary() {
@@ -211,7 +211,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", name=" + name + ", designation=" + designation + ", salary=" + salary
+		return "Employee [empId=" + empId + ", name=" + name + ", job=" + job + ", salary=" + salary
 				+ ", dob=" + dob + ", gender=" + gender + ", skills=" + skills + ", spokenLanguages=" + spokenLanguages
 				+ ", hobbies=" + Arrays.toString(hobbies) + ", employeeType=" + employeeType + ", insured=" + insured
 				+ ", email=" + email + ", mobile=" + mobile + ", nationality=" + nationality + ", address=" + address
